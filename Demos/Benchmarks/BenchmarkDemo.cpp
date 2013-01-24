@@ -215,7 +215,7 @@ public:
 			sum_ms += ms;
 			sum_ms_samples++;
 			btScalar mean_ms = (btScalar)sum_ms/(btScalar)sum_ms_samples;
-			printf("%d rays in %d ms %d %d %f\n", NUMRAYS * frame_counter, ms, min_ms, max_ms, mean_ms);
+			//printf("%d rays in %d ms %d %d %f\n", NUMRAYS * frame_counter, ms, min_ms, max_ms, mean_ms);
 			ms = 0;
 			frame_counter = 0;
 		}

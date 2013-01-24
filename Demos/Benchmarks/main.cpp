@@ -67,11 +67,11 @@ int main(int argc,char** argv)
 			float frameTime = CProfileManager::Get_Time_Since_Reset();
 			if ((i % 25)==0)
 			{
-				printf("BenchmarkDemo: %s, Frame %d, Duration (ms): %f\n",demoNames[d],i,frameTime);
+				//printf("BenchmarkDemo: %s, Frame %d, Duration (ms): %f\n",demoNames[d],i,frameTime);
 			}
 			totalTime[d] += frameTime;
-			if (i==NUM_TESTS-1)
-				CProfileManager::dumpAll();
+			//if (i==NUM_TESTS-1)
+		//		CProfileManager::dumpAll();
 
 			
 		}
@@ -80,7 +80,7 @@ int main(int argc,char** argv)
 
 	for (d=0;d<NUM_DEMOS;d++)
 	{
-		printf("\nResults for %s: %f",demoNames[d],totalTime[d]*(1.f/NUM_TESTS));
+		printf("Results for %s: %f\n",demoNames[d],totalTime[d]*(1.f/NUM_TESTS));
 	}
 
 #endif //USE_GRAPHICAL_BENCHMARK

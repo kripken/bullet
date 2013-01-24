@@ -8,6 +8,8 @@
 # You shouldn't have to modify anything below this line 
 ########################################################
 
+set(CMAKE_CXX_FLAGS "-I../../src -L../../src/.libs")
+
 IF (USE_GRAPHICAL_BENCHMARK)
 IF (USE_GLUT)
 	INCLUDE_DIRECTORIES(
